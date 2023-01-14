@@ -44,6 +44,16 @@ print("Итого",sum ,"сом")
 
 var tovar:[String:Int] = ["Cola":50, "Kefir":65, "Milk":40, "Bread":20, "Salad":100, "Sugar":38, "Pepper":16, "Fanta": 58,"Cheese":90, "Potato":34]
 
+var searchTovar = readLine()!
+var searchTovar2 = readLine()!
+var searchTovar3 = readLine()!
+searchTovar
+
+
+
+//for (key, value) in tovar(){
+//  print(value)
+//}
 func priceTovar(tovar: String)->Int{
         switch tovar {
         case "Cola":
@@ -106,14 +116,9 @@ func priceTovar(tovar: String)->Int{
     var FantaPrice = priceTovar(tovar: Fanta)
     var CheesePrice = priceTovar(tovar: Cheese)
     var PotatoPrice = priceTovar(tovar: Potato)
-        
+
     var totalPrice = ColaPrice + KefirPrice + MilkPrice + BreadPrice + SaladPrice + SugarPrice + PepperPrice + FantaPrice + CheesePrice + PotatoPrice
-    
- 
+
+
     print("-------------------")
     print("Total: \(totalPrice) сом")
-    
-  
-    
-
-
