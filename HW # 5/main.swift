@@ -13,18 +13,21 @@ import Foundation
 //
 var basket:[String:Int] = [:]
 
-basket.updateValue(45, forKey: "Milk")
-basket.updateValue(76, forKey: "Bread")
-basket.updateValue(489, forKey: "Cake")
+basket["Milk"] = 45
+basket["Bread"] = 76
+basket["Cake"] = 489
+
 
 print(basket)
 
-var sum = (45 + 76 + 489)
+var sum = (45+76+489)
 for number in basket {
 sum += Int()
 }
 
-print("Итого",sum)
+print("Итого",sum ,"сом")
+
+
 
 //2)Создать словарь из 10 товаров. Составить программу, где ридлайн вызывается 3 раза и запрашивает название товара. Ввести название товаров и вывести информацию в виде чека:
 //
