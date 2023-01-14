@@ -42,22 +42,20 @@ print("Итого",sum ,"сом") //Итого 610 сом
 // Итого: 218 сом
 
 
-var tovar:[String:Int] = ["Cola":50, "Kefir":65, "Milk":40, "Bread":20, "Salad":100, "Sugar":38, "Pepper":16, "Fanta": 58,"Cheese":90, "Potato":34]
+var tovary:[String:Int] = ["Cola":50, "Kefir":65, "Milk":40, "Bread":20, "Salad":100, "Sugar":38, "Pepper":16, "Fanta": 58,"Cheese":90, "Potato":34]
 
 var searchTovar = readLine()!
 var searchTovar2 = readLine()!
 var searchTovar3 = readLine()!
+var korzina: [String:Int] = [:]
 
+var itogSumma = 0
 
-print("-----Чек-----")
-print("Наим-е:    Сумма:")
-
-
-func priceProduct(_ p1: String, _ p2: String, _ p3: String){
+func priceTovar(_ p1: String, _ p2: String, _ p3: String){
     var price1 = 0
     var price2 = 0
     var price3 = 0
-    for i in tovar {
+    for i in tovary {
         if i.key == p1 {
             print("Продукт: \(i.key), цена: \(i.value)")
             price1 = i.value
@@ -74,4 +72,31 @@ func priceProduct(_ p1: String, _ p2: String, _ p3: String){
     print("-------------------")
     print("Итого:\(price1 + price2 + price3) сом")
 }
+
+
+
+
+//for i in 1...3 {
+//    print("VVedite tovar")
+//    var searchProduct = readLine()!
+//
+//    for (klu4, zna4enie) in tovary {
+//        if searchProduct == klu4 {
+//            korzina[klu4] = zna4enie
+//        }
+//    }
+//}
+
+priceTovar(searchTovar, searchTovar2, searchTovar3)
+
+print("-----Чек-----")
+print("Наим-е:    Сумма:")
+//for (klu4, zna4enie) in korzina {
+//    print("\(klu4)       \(zna4enie)")
+//    itogSumma += zna4enie
+//}
+
+print("Итого: \(itogSumma) som")
+//
+
 
